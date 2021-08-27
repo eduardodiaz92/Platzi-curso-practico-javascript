@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./interes-simple.css">
+    <title>interés simple</title>
+</head>
+<body>
+    <header >        
+                
+    </header>
+    <section class="login">
+      <section class="login__container"> 
+    <form>  
+        <h1 class="titulo">Calcular el interés simple mensual</h1>      
+        <p>
+          <label for="InputCapital">Capital</label><br>
+          <input id="InputCapital" type="number" >
+        </p>
+        <p>
+          <label>Pago mensual (%)</label><br>          
+          <select id="Porcentaje">
+            <option value=""></option>
+            <option value="0.02">2%</option>
+            <option value="0.05">5%</option>
+            <option value="0.10">10%</option>
+            <option value="0.15">15%</option>
+            <option value="0.20">20%</option>
+          </select>
+        </p>
+        <p>
+          <label>Meses</label><br>          
+          <select id="Meses">
+            <option value=""></option>
+            <option value="3">3 Meses</option>
+            <option value="6">6 Meses</option>
+            <option value="9">9 Meses</option>
+            <option value="12">12 Meses</option>            
+          </select>
+        </p> 
+        <p>       
+          <button type="button" onclick="calcularInteresCompuesto()">Calcular</button>
+          <button type="reset" >Resetear</button>
+        </p>
+        <p class="" id="ResultI"></p>
+      </form>
+      </section>
+    </section>
+      
+
+    <script src="./interes-simple.js"></script>
+
+    
+</body>
+</html>
